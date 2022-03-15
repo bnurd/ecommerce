@@ -10,11 +10,8 @@ public class Order : IEntity
     public int AddressId { get; set; }
     public Address Address { get; set; }
 
-    public double Price { get; set; }
-    
     public int UserId { get; set; }
     public User User { get; set; }
 
-
-    public List<Product> Products { get; set; }
+    public List<MiniOrder> MiniOrders { get; set; }
 }
